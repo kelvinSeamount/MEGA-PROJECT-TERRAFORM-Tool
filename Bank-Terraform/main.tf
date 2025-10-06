@@ -47,7 +47,7 @@ resource "aws_route_table" "mekadevops_route_table" {
 
 resource "aws_route_table_association" "mekadevops_association" {
   count = 2
-  subnet_id = elementaws_subnet.mekadevops_subnet[count.index].id
+  subnet_id = aws_subnet.mekadevops_subnet[count.index].id
   route_table_id = aws_route_table.mekadevops_route_table.id
 }
 
