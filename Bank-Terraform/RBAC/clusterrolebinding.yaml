@@ -8,5 +8,5 @@ roleRef:
   name: jenkins-cluster-role
 subjects:
   - kind: ServiceAccount
-    name: jenkins
+    name: noteapp-sa
     namespace: webapps
